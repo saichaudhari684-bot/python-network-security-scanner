@@ -1,114 +1,46 @@
-\# Python Network Security Scanner
+# Python Network Security Scanner
 
+A lightweight, multithreaded TCP port scanner developed in Python to practice network reconnaissance, socket programming, and fundamental cybersecurity concepts.
 
+## Overview
 
-A lightweight Python-based TCP port scanner developed to practice
+This tool scans a specified range of TCP ports on an authorized target and identifies open ports. It also attempts to identify commonly associated services and generates a text-based scan report.
 
-network reconnaissance, socket programming, and basic security testing.
+The project was developed as a hands-on cybersecurity learning project to understand how port scanning and basic network reconnaissance work.
 
+## Features
 
+- TCP port scanning
+- Multithreaded scanning using ThreadPoolExecutor
+- Configurable port range
+- Configurable number of scanning threads
+- Common service identification
+- Input validation
+- Scan duration measurement
+- Automatic scan report generation
+- Clean command-line interface
 
-\## Features
+## Technologies
 
+- Python 3
+- Socket Programming
+- TCP/IP Networking
+- Concurrent Programming
+- ThreadPoolExecutor
+- Python Standard Library
 
+## Project Structure
 
-\- TCP port scanning
+python-network-security-scanner/
+│
+├── scanner.py
+├── README.md
+├── requirements.txt
+└── .gitignore
 
-\- Multithreaded scanning
+## Installation
 
-\- Common service identification
+### 1. Clone the repository
 
-\- Configurable port range
-
-\- Configurable number of threads
-
-\- Scan duration measurement
-
-\- Automatic text report generation
-
-\- Input validation
-
-
-
-\## Technologies
-
-
-
-\- Python 3
-
-\- Socket Programming
-
-\- ThreadPoolExecutor
-
-\- TCP/IP Networking
-
-
-
-\## Usage
-
-
-
-Run the scanner:
-
-
-
-&#x20;   python scanner.py
-
-
-
-Enter the target IP/hostname, port range, and number of threads when prompted.
-
-
-
-Example:
-
-
-
-&#x20;   Target: 127.0.0.1
-
-&#x20;   Start port: 1
-
-&#x20;   End port: 1000
-
-&#x20;   Threads: 100
-
-
-
-\## Example Output
-
-
-
-&#x20;   \[OPEN] Port 135   epmap
-
-&#x20;   \[OPEN] Port 445   microsoft-ds
-
-
-
-\## Project Purpose
-
-
-
-This project was created as an educational cybersecurity project to
-
-understand TCP connections, port scanning, network reconnaissance,
-
-and Python socket programming.
-
-
-
-\## Ethical Use
-
-
-
-Use this tool only against systems you own or have explicit permission
-
-to test. Unauthorized scanning of systems or networks is not permitted.
-
-
-
-\## Author
-
-
-
-Sai Chaudhari
-
+```bash
+git clone https://github.com/saichaudhari684-bot/python-network-security-scanner.git
