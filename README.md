@@ -44,3 +44,26 @@ python-network-security-scanner/
 
 ```bash
 git clone https://github.com/saichaudhari684-bot/python-network-security-scanner.git
+2. Navigate to the project directory
+```bash
+cd python-network-security-scanner
+3. Run the scanner
+```bash
+python scanner.py
+
+Example
+Enter target IP/hostname: 127.0.0.1
+Start port: 1
+End port: 1000
+Number of threads (default 100): 100
+Example Output
+[OPEN]  Port 135   epmap
+[OPEN]  Port 445   microsoft-ds
+
+============================================================
+                  SCAN SUMMARY
+============================================================
+Target          : 127.0.0.1
+Ports scanned   : 1000
+Open ports      : 2
+Scan duration   : 0:00:05
